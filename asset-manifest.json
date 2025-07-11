@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/furihako/static/css/main.c726c079.css",
-    "main.js": "/furihako/static/js/main.2b6c2255.js",
+    "main.js": "/furihako/static/js/main.73a84800.js",
     "static/media/logo.png": "/furihako/static/media/logo.3cb2e1f05c307301bf54.png",
     "index.html": "/furihako/index.html",
     "main.c726c079.css.map": "/furihako/static/css/main.c726c079.css.map",
-    "main.2b6c2255.js.map": "/furihako/static/js/main.2b6c2255.js.map"
+    "main.73a84800.js.map": "/furihako/static/js/main.73a84800.js.map"
   },
   "entrypoints": [
     "static/css/main.c726c079.css",
-    "static/js/main.2b6c2255.js"
+    "static/js/main.73a84800.js"
   ]
 }
