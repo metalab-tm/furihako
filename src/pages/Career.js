@@ -22,7 +22,7 @@ const Career = () => {
                             <div className="timeline-year">{career.year}</div>
                             <div className="timeline-title">{career.title}</div>
                             {career.description && <p className="timeline-desc">{career.description}</p>}
-                            {career.img && <img className="timeline-img" src={career.img} alt="タイムライン画像" />}
+                            {career.img && <img className="timeline-img" src={process.env.PUBLIC_URL + career.img} alt="タイムライン画像" />}
                         </div>
                     </div>
                 ))}

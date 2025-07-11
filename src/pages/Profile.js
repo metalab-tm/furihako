@@ -7,7 +7,7 @@ const Profile = () => {
     const [imgLoaded, setImageLoaded] = useState(false);
     useEffect(() => {
         const img = new Image();
-        img.src = profileImgPath;
+        img.src = process.env.PUBLIC_URL + profileImgPath;
         img.onload = () => {
             setImageLoaded(true);
         };
@@ -35,7 +35,7 @@ const Profile = () => {
             {/* プロフィール画像の読み込みが完了してから表示する */}
             {imgLoaded && (
                 <>
-                    <img id="profile-img" src={profileImgPath} alt="プロフィール画像" />
+                    <img id="profile-img" src={process.env.PUBLIC_URL + profileImgPath} alt="プロフィール画像" />
                     <table id="profile-table">
                         <tbody>
                             {Object.entries(profileItems).map(([label, value], index) => (
