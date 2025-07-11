@@ -1,0 +1,35 @@
+#profile-img {
+    width: 25%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    pointer-events: none; /* 右クリックで画像を保存したり出来なくなる */
+}
+
+#profile-table {
+    width: 75%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+}
+
+#profile-table th,
+#profile-table td {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+
+#profile-table th {
+    background-color: #f7f7f7;
+    width: 30%;
+}
+
+#profile-table td {
+    background-color: #fff;
+}
+
+#profile-img-loading-msg {
+    font-weight: bold;
+    color: #1abc9c;
+}

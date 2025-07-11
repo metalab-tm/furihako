@@ -1,0 +1,5 @@
+main {
+    flex: 1; /* SideMenuの幅を差し引いた幅という意味 */
+    background-color: #ecf0f1;
+    padding: 2em;
+}

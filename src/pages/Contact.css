@@ -1,0 +1,60 @@
+#contact form {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+  width: 100%;
+  box-sizing: border-box; /* paddingなどを含めて「width: 100%;」にする */
+  padding: 1em 1em;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-medium); /* 指定しないと、user agent stylesheetによって小さくなってしまう */
+  margin-top: 0.5em;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+}
+
+#contact button[type="submit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 1em 2em;
+  font-size: var(--font-size-medium); /* 指定しないと、user agent stylesheetによって小さくなってしまう */
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.submit-status {
+  margin-top: 1.5em;
+  font-weight: bold;
+}
+
+.success-msg {
+  color: #1abc9c;
+}
+
+.error-msg {
+  color: #e74c3c;
+}

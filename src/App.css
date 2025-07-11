@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  display: flex; /* 以下で「flex: 1;」を使うために必要 */
+  flex-direction: column; /* 中の要素は、横並びではなく縦並び */
+  height: 100vh;
+}
+
+.App-logo {
+  height: calc(var(--font-size-large) * 2);
+  pointer-events: none; /* 右クリックで画像を保存したり出来なくなる */
+  margin: 1em 1em 1em 0em;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-large);
+  line-height: var(--font-size-large);
+  color: white;
+}
+
+#body-wrapper {
+  display: flex; /* SideMenuとMainContentを横並びにするために必要 */
+  flex: 1; /* headerの高さを差し引いた高さという意味 */
+}

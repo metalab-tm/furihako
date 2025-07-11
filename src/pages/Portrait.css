@@ -1,0 +1,30 @@
+#portrait-table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+}
+
+#portrait-table th,
+#portrait-table td {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+
+#portrait-table th {
+    background-color: #f7f7f7;
+}
+
+#portrait-table td {
+    background-color: #fff;
+}
+
+#portrait-table a {
+    color: var(--color-link);
+}
+
+#portrait-table a:visited {
+    color: var(--color-link);
+}

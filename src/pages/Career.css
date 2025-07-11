@@ -1,0 +1,70 @@
+.timeline {  
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #bdc3c7;
+  transform: translateX(-50%);
+}
+
+.timeline-row {
+  display: flex;
+  position: relative;
+}
+
+.timeline-row.right {
+  justify-content: flex-end;
+}
+
+.timeline-row::before {
+  content: '';
+  position: absolute;
+  top: 1.5em;
+  width: 15px;
+  height: 15px;
+  background-color: #3498db;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline-row.left::before {
+  left: 50%; /* 要素の左上が、親要素の中央になるように配置 */
+  transform: translateX(-50%); /* 更に要素の半分左へずらして、要素が親要素の中央になるように調整 */
+}
+
+.timeline-row.right::before {
+  right: 50%; /* 要素の右上が、親要素の中央になるように配置 */
+  transform: translateX(50%); /* 更に要素の半分右へずらして、要素が親要素の中央になるように調整 */
+}
+
+.timeline-content {
+  background: #f9f9f9;
+  padding: 1em;
+  border-radius: var(--border-radius);
+  width: 45%;
+  box-shadow: var(--box-shadow);
+}
+
+.timeline-year {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  color: #3498db;
+}
+
+.timeline-title {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.timeline-img {
+  width: 50%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  pointer-events: none; /* 右クリックで画像を保存したり出来なくなる */
+}

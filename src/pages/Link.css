@@ -1,0 +1,30 @@
+#link-table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+}
+
+#link-table th,
+#link-table td {
+    padding: 1em;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    text-align: left;
+}
+
+#link-table th {
+    background-color: #f7f7f7;
+}
+
+#link-table td {
+    background-color: #fff;
+}
+
+#link-table a {
+    color: var(--color-link);
+}
+
+#link-table a:visited {
+    color: var(--color-link);
+}

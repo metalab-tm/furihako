@@ -1,0 +1,19 @@
+.menu-item {
+    padding: 0.5em 1em;
+    transition: background-color 0.5s ease;
+}
+
+.menu-item:hover {
+    cursor: pointer;
+    background-color: #1abc9c;
+}
+
+.menu-item a {
+    color: #fff;
+    text-decoration: none; /* 下線は非表示 */
+    display: block; /* <li>のどこをクリックしても反応させるために必要 */
+}
+
+.menu-item a:visited {
+    color: #fff;
+}
