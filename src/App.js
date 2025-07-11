@@ -43,11 +43,11 @@ function AnimatedRoutes() {
       <MainContent>
         <AnimatePresence mode="wait">
           <Routes key={location.pathname} location={location}> {/* Routeのpathは「./profile」のような相対パスでは指定できない決まりなので注意！ */}
-            <Route path="/" element={<AnimatedPageWrapper><Profile /></AnimatedPageWrapper>} />
-            <Route path="/career" element={<AnimatedPageWrapper><Career /></AnimatedPageWrapper>} />
-            <Route path="/portrait" element={<AnimatedPageWrapper><Portrait /></AnimatedPageWrapper>} />
-            <Route path="/link" element={<AnimatedPageWrapper><Link /></AnimatedPageWrapper>} />
-            <Route path="/contact" element={<AnimatedPageWrapper><Contact /></AnimatedPageWrapper>} />
+            <Route path={process.env.PUBLIC_URL + "/"} element={<AnimatedPageWrapper><Profile /></AnimatedPageWrapper>} />
+            <Route path={process.env.PUBLIC_URL + "/career"} element={<AnimatedPageWrapper><Career /></AnimatedPageWrapper>} />
+            <Route path={process.env.PUBLIC_URL + "/portrait"} element={<AnimatedPageWrapper><Portrait /></AnimatedPageWrapper>} />
+            <Route path={process.env.PUBLIC_URL + "/link"} element={<AnimatedPageWrapper><Link /></AnimatedPageWrapper>} />
+            <Route path={process.env.PUBLIC_URL + "/contact"} element={<AnimatedPageWrapper><Contact /></AnimatedPageWrapper>} />
           </Routes>
         </AnimatePresence>
       </MainContent>
