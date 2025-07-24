@@ -10,7 +10,7 @@ const menuVariants = {
 const Menu = ({menuItems, isMenuOpen, toggleMenu}) => {
     return (
         /* メニューの余白部分をクリックしても反応するよう、motion.navにonClickを設定 */
-        <motion.nav id="menu" variants={menuVariants} animate={isMenuOpen ? "open" : "closed"} onClick={toggleMenu}>
+        <motion.nav id="menu" variants={menuVariants} initial="closed" animate={isMenuOpen ? "open" : "closed"} onClick={toggleMenu}>
             {/* MenuItemのクリックイベントがmotion.navまで伝播しないよう、ulにstopPropagationを設定 */}
             <ul onClick={(e) => e.stopPropagation()}>
                 {menuItems.map((menuItem, index) => <MenuItem key={index} menuItem={menuItem} toggleMenu={toggleMenu} />)}
