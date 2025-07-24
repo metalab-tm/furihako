@@ -1,0 +1,25 @@
+#menu {
+    font-size: var(--font-size-large);
+    height: calc(100% - var(--footer-height));
+}
+
+@media (orientation: landscape) {
+    #menu { /* サイドメニューとして表示 */
+        position: static;
+        background-color: #282c34;
+        text-align: left;
+        transform: translateY(0) !important; /* 縦長になったら、アニメーションで移動した分をもとに戻す */
+    }
+}
+
+@media (orientation: portrait) {
+    #menu { /* 上から出てくるメニューとして表示 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: var(--z-index-modal);
+        text-align: center;
+        background-color: rgba(40, 44, 52, 0.9);
+    }
+}

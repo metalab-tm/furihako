@@ -1,5 +1,4 @@
 .menu-item {
-    padding: 0.5em 1em;
     transition: background-color 0.5s ease;
 }
 
@@ -12,6 +11,11 @@
     color: #fff;
     text-decoration: none; /* 下線は非表示 */
     display: block; /* <li>のどこをクリックしても反応させるために必要 */
+    padding: 0.5em 1em; /* .menu-item側に書かないこと！そっちに書くと「<li>のどこをクリックしても反応させる」が出来なくなる */
+}
+
+.menu-item a.active { /* NavLinkのactive時に適用するスタイル（a:activeではないので注意！） */
+    color: #f1c40f !important;
 }
 
 .menu-item a:visited {

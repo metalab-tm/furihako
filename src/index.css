@@ -3,9 +3,20 @@
   --font-size-medium: 16px;
   --font-size-large: 24px;
 
+  --icon-size: 24px;
+
   --box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   --border-radius: 10px;
   --color-link: #2980b9;
+
+  --footer-height: 60px; /* 一般的な高さ */
+
+  /* 一般的な値 */
+  --z-index-default: 1; /* 少しだけ手前に出したい要素 */
+  --z-index-header: 10; /* ヘッダーなど、常に手前にあってほしい要素 */
+  --z-index-dropdown: 100; /* ドロップダウンメニューなど */
+  --z-index-modal: 1000; /* モーダルダイアログや、画面全体を覆うオーバーレイ */
+  --z-index-loading-spinner: 9999; /* 「何があっても絶対に最前面！」という強い意志が込められた、緊急用の読み込みインジケーターなど */
 }
 
 * {
@@ -21,4 +32,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; /* ページ切替時に一瞬横スクロールバーが表示される事象への対応（これが一般的らしい） */
+ 
+  /* フッターにコンテンツの最下部が隠れないようにする対応の一環として必要（ここから） */
+  display: flex;
+  flex-direction: column;
+  /* フッターにコンテンツの最下部が隠れないようにする対応の一環として必要（ここまで） */
 }
